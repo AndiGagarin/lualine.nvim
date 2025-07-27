@@ -13,7 +13,7 @@ local M = {}
 M.sections = {
   lualine_a = {
     function()
-      return 'Mason'
+      return '  mason '
     end,
   },
   lualine_b = {

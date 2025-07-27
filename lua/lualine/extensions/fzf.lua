@@ -29,7 +29,7 @@ local function fzf_element()
 end
 
 local function fzf_statusline()
-  return 'FZF'
+  return '  fzf'
 end
 
 local M = {}

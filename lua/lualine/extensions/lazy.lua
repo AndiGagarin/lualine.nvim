@@ -10,7 +10,7 @@ local M = {}
 M.sections = {
   lualine_a = {
     function()
-      return 'lazy 💤'
+      return '󰒲  lazy '
     end,
   },
   lualine_b = {
