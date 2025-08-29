@@ -12,9 +12,12 @@ local M = {}
 
 M.sections = {
   lualine_a = {
-    function()
-      return '  mason '
-    end,
+    {
+      separator = { left = '', right = '' },
+      function()
+        return '  mason '
+      end,
+    },
   },
   lualine_b = {
     function()
@@ -22,6 +25,7 @@ M.sections = {
       return 'Installed: ' .. #mason_registry.get_installed_packages() .. '/' .. #mason_registry.get_all_package_specs()
     end,
   },
+  lualine_c = {},
 }
 
 M.filetypes = { 'mason' }

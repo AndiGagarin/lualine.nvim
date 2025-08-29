@@ -43,6 +43,7 @@ M.sections = {
   lualine_a = {
     {
       'mode',
+      separator = { left = '', right = '' },
       fmt = function(str)
         return '󰁴  ' .. str:sub(1, 1)
       end,
@@ -81,7 +82,10 @@ M.sections = {
     oil_stats,
   },
   lualine_z = {
-    oil_location,
+    {
+      oil_location,
+      separator = { left = '', right = '' },
+    },
   },
 }
 

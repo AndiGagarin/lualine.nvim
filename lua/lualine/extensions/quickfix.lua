@@ -24,11 +24,20 @@ function M.init()
 end
 
 M.sections = {
-  lualine_a = { label },
+  lualine_a = {
+    {
+      separator = { left = '', right = '' },
+      label,
+    },
+  },
   lualine_b = { title },
-  lualine_z = { 'location' },
+  lualine_z = {
+    {
+      separator = { left = '', right = '' },
+      'location',
+    },
+  },
 }
-
 M.filetypes = { 'qf' }
 
 return M

@@ -2,9 +2,12 @@ local M = {}
 
 M.sections = {
   lualine_a = {
-    function()
-      return '  ' .. 'lazygit'
-    end,
+    {
+      separator = { left = '', right = '' },
+      function()
+        return '  ' .. 'lazygit'
+      end,
+    },
   },
   lualine_b = {},
   lualine_c = {

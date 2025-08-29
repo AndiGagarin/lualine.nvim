@@ -35,9 +35,19 @@ end
 local M = {}
 
 M.sections = {
-  lualine_a = { fzf_statusline },
+  lualine_a = {
+    {
+      fzf_statusline,
+      separator = { left = '', right = '' },
+    },
+  },
   lualine_y = { fzf_element },
-  lualine_z = { fzf_picker },
+  lualine_z = {
+    {
+      fzf_picker,
+      separator = { left = '', right = '' },
+    },
+  },
 }
 
 M.filetypes = { 'fzf' }

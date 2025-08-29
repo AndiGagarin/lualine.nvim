@@ -3,6 +3,7 @@ local M = {}
 M.sections = {
   lualine_a = {
     {
+      separator = { left = '', right = '' },
       'mode',
       fmt = function(str)
         return str:sub(1, 1)
