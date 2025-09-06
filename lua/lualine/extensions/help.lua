@@ -5,7 +5,7 @@ M.sections = {
     {
       separator = { left = '', right = '' },
       function()
-        return '󰣇  man'
+        return '󰘥  help'
       end,
     },
   },
@@ -19,6 +19,6 @@ M.sections = {
   },
 }
 
-M.filetypes = { 'man' }
+M.filetypes = { 'help' }
 
 return M
